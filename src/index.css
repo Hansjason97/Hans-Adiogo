@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html{
+    scroll-behavior:smooth;
+  }
+
+  body{
+    @apply bg-secondary text-blancDark text-base;
+    counter-reset: h2;
+  }
+  ::selection{
+    @apply bg-primary text-blanc;
+  }
+  ::-webkit-scrollbar{
+    @apply w-1;
+  }
+  ::-webkit-scrollbar-track{
+    @apply bg-transparent h-fit;
+  }
+  ::-webkit-scrollbar-thumb{
+    @apply bg-primary;
+  }
+  h2, h3, h4, h5, h6{
+    @apply font-semibold;
+  }
+  h4{
+    @apply text-[18px] text-blanc;
+  }
+  h3{
+    @apply text-2xl sm:text-[1.65rem] md:text-[1.8rem] text-blanc;
+  }
+}
+
+@layer components{
+  .button-primary{
+    @apply w-fit px-7 py-4 border border-primary rounded-md cursor-pointer transition-all duration-150 ease-in my-5 font-mono text-primary;
+  }
+  .button-primary:hover{
+    @apply shadow-[4px_4px_0_0] shadow-primary translate-x-[-5px] translate-y-[-5px] text-primary outline-none;
+  }
+  .lvlOne{
+    @apply text-[40px] sm:text-[3.5rem] lg:text-[60px] tracking-tight leading-[120%];
+  }
+  .special{
+    @apply font-mono text-primary ;
+  }
+  .numbered-heading{
+    @apply flex items-baseline relative text-[28px] sm:text-4xl leading-[110%] tracking-tight after:w-full after:md:w-[300px] whitespace-nowrap mb-10 text-blanc;
+  }
+  .numbered-heading::before{
+    counter-increment: h2;
+    content: "0" counter(h2) ".";
+    margin-right: 10px;
+    color: #cd1d32;
+    font-family: 'Fira Code';
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .numbered-heading::after{
+    content: "";
+    display: block;
+    position: relative;
+    top: -10px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #2A354B;
+  }
+  .customLink{
+    @apply w-fit inline-block text-primary after:content-[""]
+    after:block after:w-0 after:h-[1px] after:relative after:bottom-[0.2em] after:bg-primary after:opacity-50 after:transition-all after:duration-200 after:ease-in;
+  }
+  .customLink:hover{
+    @apply after:w-[100%];
+  }
+  .technologies{
+    @apply list-none text-sm font-mono flex flex-col gap-2 py-4 w-fit;
+  }
+  .technologies li{
+    @apply relative pl-7 mb-2 before:mr-2 before:content-["▹"] before:text-primary before:absolute before:left-0 before:top-0;
+  }
+  .tab-title{
+    @apply px-5 py-3 transition-all ease-in md:px-0 md:w-32 md:text-left md:pl-6 md:pr-4;
+  }
+}
