@@ -63,7 +63,7 @@ function home() {
       </section>
       {/**Fourth Section ################################################################# */}
       <section id='work' className='px-5 md:px-[50px] lg:px-[100px] mx-auto max-w-6xl flex flex-col justify-center py-[60px] md:py-[100px]'>
-        <h2 className='numbered-heading w-fit max-w-5xl mx-auto'>
+        <h2 className='numbered-heading lg:w-fit lg:max-w-5xl lg:mx-auto'>
           What I've done
         </h2>
         <FeaturedProjects data={featuredProjects} />

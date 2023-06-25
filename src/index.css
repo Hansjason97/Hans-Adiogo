@@ -84,4 +84,7 @@
   .tab-title{
     @apply px-5 py-3 transition-all ease-in md:px-0 md:w-32 md:text-left md:pl-6 md:pr-4;
   }
+  .footerLink{
+    @apply relative top-0 transition-all duration-150 ease-linear hover:top-[-3px] hover:text-primary p-2;
+  }
 }

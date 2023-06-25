@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import { Outlet } from 'react-router-dom'
 import classes from './Layout.module.css'
+import Footer from './Footer'
 
 function Layout() {
   return (
@@ -40,6 +41,7 @@ function Layout() {
         <span></span>
       </div>
       <Outlet />
+      <Footer />
     </>
   )
 }
