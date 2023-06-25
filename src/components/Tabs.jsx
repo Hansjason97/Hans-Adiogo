@@ -8,7 +8,7 @@ function Tabs(props) {
     <div className='flex flex-col gap-5 md:flex-row'>
         <div role='tablist' className='flex flex-row md:flex-col'>
             { props.content.map((tab, index) =>(
-                <button className={ currentTab === props.content[index] ? 'tab-title text-sm bg-secondaryLight text-primary font-mono': 'tab-title text-sm font-mono'} key={index} onClick={()=>setCurrentTab(props.content[index])}>
+                <button className={ currentTab === props.content[index] ? 'tab-title text-sm bg-secondaryDark text-primary font-mono': 'tab-title text-sm font-mono'} key={index} onClick={()=>setCurrentTab(props.content[index])}>
                     {tab.title}
                 </button>
             )) }

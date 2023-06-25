@@ -45,16 +45,16 @@ export const featuredProjects = [
         title: 'Best Eats',
         description: 'My super duper description for a smooth project recently made for a new company in tech domains.',
         tags: ['React', 'Tailwind'],
-        linkGithub: "",
-        linkPreview: "",
+        linkGithub: null,
+        linkPreview: null,
         image: image2
     },
     {
         title: 'My cool project title',
         description: 'My super duper description for a smooth project recently made for a new company in tech domains.',
         tags: ['React', 'Tailwind', 'VS Code'],
-        linkGithub: "",
-        linkPreview: "",
-        image: image1
+        linkGithub: null,
+        linkPreview: null,
+        image: null
     },
 ];

@@ -55,15 +55,15 @@ function home() {
         </div>
       </section>
       {/**Third section ################################################################## */}
-      <section id='Experience' className='px-5 md:px-[50px] lg:px-0 lg:pl-[100px] mx-auto max-w-5xl flex flex-col justify-center py-[60px] md:py-[100px]'>
+      <section id='Experience' className='px-5 md:px-[50px] lg:px-[100px] mx-auto max-w-5xl flex flex-col justify-center py-[60px] md:py-[100px]'>
         <h2 className='numbered-heading'>
           Where I've worked
         </h2>
         <Tabs content={experience} />
       </section>
       {/**Fourth Section ################################################################# */}
-      <section id='work' className='px-5 md:px-[50px] lg:px-0 lg:pl-[100px] mx-auto max-w-5xl flex flex-col justify-center py-[60px] md:py-[100px]'>
-        <h2 className='numbered-heading'>
+      <section id='work' className='px-5 md:px-[50px] lg:px-[100px] mx-auto max-w-6xl flex flex-col justify-center py-[60px] md:py-[100px]'>
+        <h2 className='numbered-heading w-fit max-w-5xl mx-auto'>
           What I've done
         </h2>
         <FeaturedProjects data={featuredProjects} />
