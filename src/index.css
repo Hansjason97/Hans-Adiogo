@@ -121,4 +121,16 @@
   .counterLink{
     counter-reset: a;
   }
+  .menuLink{
+    @apply text-blanc hover:text-primary;
+  }
+  .menuLink::before{
+    counter-increment: b;
+    content: "0" counter(b) ".";
+    @apply text-primary text-sm font-normal mr-1;
+  }
+  .menuTab{
+    counter-reset: b;
+    @apply font-mono hidden md:flex gap-8;
+  }
 }

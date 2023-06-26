@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import logo from './assets/logo.svg'
 
 function Header() {
 
@@ -11,12 +12,18 @@ function Header() {
     <div>
       <div className='px-5 h-[80px] flex items-center justify-between lg:px-[50px] fixed top-0 left-0 w-full bg-secondary z-20 shadow-lg'>
           <nav>
-          <a href="" className='w-fit px-3 text-xl text-primary font-semi-bold'>HA.</a>
+          <a href="#"><img src={logo} alt="logo" className='w-8 h-8'/></a>
           </nav>
 
           <div className={ visible ? `menuIcon menuIconActive` : `menuIcon`} onClick={()=>setVisible(!visible)}>
             <div></div>
           </div>
+          <nav className='menuTab'>
+            <a href="" className='menuLink'>About</a>
+            <a href="" className='menuLink'>Experience</a>
+            <a href="" className='menuLink'>Projects</a>
+            <a href="" className='menuLink'>Contact</a>
+          </nav>
           {/**Mobile Menu */}
         <nav className={menuClass}>
             <a href='#about' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>About</a>
