@@ -5,6 +5,7 @@
 @layer base {
   html{
     scroll-behavior:smooth;
+    @apply scroll-pt-6;
   }
 
   body{
@@ -93,5 +94,31 @@
   }
   .containerBase{
     @apply px-5 md:px-[50px] lg:px-[100px] mx-auto max-w-5xl flex flex-col justify-center py-[60px] md:py-[100px];
+  }
+  .menuIcon{
+    @apply w-8 cursor-pointer block md:hidden;
+  }
+  .menuIcon::before, .menuIcon::after, .menuIcon div{
+    @apply bg-primary content-[""] block h-[2px] my-1 transition-all duration-500;
+  }
+  .menuIconActive::after{
+    @apply translate-y-[-6px] rotate-[-135deg];
+  }
+  .menuIconActive:before{
+    @apply translate-y-[6px] rotate-[135deg];
+  }
+  .menuIconActive div{
+    @apply scale-0
+  }
+  .menu-mobile-link{
+    @apply text-blanc;
+  }
+  .menu-mobile-link::before{
+    counter-increment: a;
+    content: "0" counter(a) ".";
+    @apply text-primary text-base font-normal block mb-1;
+  }
+  .counterLink{
+    counter-reset: a;
   }
 }

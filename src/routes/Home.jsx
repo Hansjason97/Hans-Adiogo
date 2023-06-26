@@ -2,6 +2,7 @@ import React from 'react'
 import Tabs from '../components/Tabs'
 import { experience, featuredProjects } from '../data/data'
 import FeaturedProjects from '../components/FeaturedProjects'
+import jason from '../assets/jason.png'
 
 function home() {
   return (
@@ -25,7 +26,7 @@ function home() {
           </button>
       </section>
       {/**Second section #############################################################"" */}
-      <section id='About' className='containerBase'>
+      <section id='about' className='containerBase'>
         <h2 className='numbered-heading'>
           About me
         </h2>
@@ -49,13 +50,14 @@ function home() {
                 <li>Figma</li>
               </ul>
           </div>
-          <div>
-            <img src="https://images7.alphacoders.com/129/1299888.png" alt="" className='max-w-[300px]' />
+          <div className='mx-auto sm:mx-0 relative top-0 max-h-[300px] w-fit cursor-pointer group transition-all duration-300 ease-in hover:top-[-7px]'>
+            <div className='absolute bg-primary h-full w-full z-[2] transition-all duration-150 ease-linear mix-blend-color hover:opacity-0'></div>
+            <img src={jason} alt="" className='max-w-[300px] contrast-50 group-hover:contrast-100 grayscale group-hover:grayscale-0 transition-all duration-150 ease-linear' />
           </div>
         </div>
       </section>
       {/**Third section ################################################################## */}
-      <section id='Experience' className='containerBase'>
+      <section id='experience' className='containerBase'>
         <h2 className='numbered-heading'>
           Where I've worked
         </h2>
@@ -70,9 +72,19 @@ function home() {
       </section>
       {/**Contact Section ################################################################# */}
       <section id='contact' className='containerBase'>
-        <h2 className='numbered-heading'>
+        <p className='special text-center mb-1'>
+          04. Looking for me ?
+        </p>
+        <h2 className='text-3xl sm:text-5xl leading-[110%] tracking-tight mb-8 text-blanc text-center'>
           Get in touch
         </h2>
+        <p className='mx-auto max-w-lg text-center'>
+          Got a project ? An Idea ? Feel free to contact me !
+          My inbox is always open.
+        </p>
+        <button className='my-10 button-primary mx-auto'>
+            <a href="mailto:hansadiogo@gmail.com">Send a message</a>
+          </button>
       </section>
     </div>
   )
