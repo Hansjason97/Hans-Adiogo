@@ -19,10 +19,10 @@ function Header() {
             <div></div>
           </div>
           <nav className='menuTab'>
-            <a href="" className='menuLink'>About</a>
-            <a href="" className='menuLink'>Experience</a>
-            <a href="" className='menuLink'>Projects</a>
-            <a href="" className='menuLink'>Contact</a>
+            <a href="#about" className='menuLink'>About</a>
+            <a href="#experience" className='menuLink'>Experience</a>
+            <a href="#work" className='menuLink'>Projects</a>
+            <a href="#contact" className='menuLink'>Contact</a>
           </nav>
           {/**Mobile Menu */}
         <nav className={menuClass}>
