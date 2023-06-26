@@ -25,7 +25,7 @@ function home() {
           </button>
       </section>
       {/**Second section #############################################################"" */}
-      <section id='About' className='px-5 md:px-[50px] lg:px-[100px] mx-auto max-w-5xl flex flex-col justify-center py-[60px] md:py-[100px]'>
+      <section id='About' className='containerBase'>
         <h2 className='numbered-heading'>
           About me
         </h2>
@@ -55,18 +55,24 @@ function home() {
         </div>
       </section>
       {/**Third section ################################################################## */}
-      <section id='Experience' className='px-5 md:px-[50px] lg:px-[100px] mx-auto max-w-5xl flex flex-col justify-center py-[60px] md:py-[100px]'>
+      <section id='Experience' className='containerBase'>
         <h2 className='numbered-heading'>
           Where I've worked
         </h2>
         <Tabs content={experience} />
       </section>
       {/**Fourth Section ################################################################# */}
-      <section id='work' className='px-5 md:px-[50px] lg:px-[100px] mx-auto max-w-6xl flex flex-col justify-center py-[60px] md:py-[100px]'>
+      <section id='work' className='containerBase'>
         <h2 className='numbered-heading lg:w-fit lg:max-w-5xl lg:mx-auto'>
           What I've done
         </h2>
         <FeaturedProjects data={featuredProjects} />
+      </section>
+      {/**Contact Section ################################################################# */}
+      <section id='contact' className='containerBase'>
+        <h2 className='numbered-heading'>
+          Get in touch
+        </h2>
       </section>
     </div>
   )

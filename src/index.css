@@ -54,10 +54,10 @@
     counter-increment: h2;
     content: "0" counter(h2) ".";
     margin-right: 10px;
-    color: #cd1d32;
     font-family: 'Fira Code';
     font-size: 20px;
     font-weight: 400;
+    @apply text-primary;
   }
   .numbered-heading::after{
     content: "";
@@ -66,7 +66,7 @@
     top: -10px;
     height: 1px;
     margin-left: 20px;
-    background-color: #2A354B;
+    @apply bg-secondaryLight;
   }
   .customLink{
     @apply w-fit inline-block text-primary after:content-[""]
@@ -90,5 +90,8 @@
   .footerMail{
     @apply font-mono tracking-wider text-sm p-2 relative top-0 transition-all duration-150 ease-linear hover:top-[-3px] hover:text-primary;
     writing-mode: vertical-rl;
+  }
+  .containerBase{
+    @apply px-5 md:px-[50px] lg:px-[100px] mx-auto max-w-5xl flex flex-col justify-center py-[60px] md:py-[100px];
   }
 }
