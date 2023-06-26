@@ -25,11 +25,6 @@ function Header() {
             <a href='#contact' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>Contact</a>
         </nav>
       </div>
-      {/**Overlay */}
-      {/**Overlay */}
-     { visible ? (<div className='fixed w-full h-screen z-10 top-0 left-0 block md:hidden
-     backdrop-blur-sm transition-all duration-150 ease-in' onClick={()=>setVisible(!visible)}></div>) : 
-     (<div className='fixed z-10 w-full h-screen backdrop-blur-0 top-0 left-0 transition-all duration-150 ease-in'></div>) }
     </div>
   )
 }

@@ -22,7 +22,7 @@ function home() {
            Currently focused on learning new tools and technologies to improve my skills.
         </p>
           <button className='mt-6 button-primary'>
-            Contact me !
+            <a href="mailto:hansadiogo@gmail.com">Contact me !</a>
           </button>
       </section>
       {/**Second section #############################################################"" */}
