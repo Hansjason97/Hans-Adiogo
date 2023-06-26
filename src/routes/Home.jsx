@@ -3,11 +3,13 @@ import Tabs from '../components/Tabs'
 import { experience, featuredProjects } from '../data/data'
 import FeaturedProjects from '../components/FeaturedProjects'
 import jason from '../assets/jason.png'
+import Reveal from '../components/Reveal'
 
 function home() {
   return (
     <div>
       {/* First section ############################################################## */}
+      <Reveal>
       <section id="home" className='min-h-[100vh] px-5 md:px-[50px] lg:px-[100px] mx-auto max-w-5xl flex flex-col justify-center'>
         <p className='special mb-1'>Hi my name is</p>
         <h2 className='lvlOne text-blanc'>
@@ -25,7 +27,9 @@ function home() {
             <a href="mailto:hansadiogo@gmail.com">Contact me !</a>
           </button>
       </section>
+      </Reveal>
       {/**Second section #############################################################"" */}
+      <Reveal>
       <section id='about' className='containerBase'>
         <h2 className='numbered-heading'>
           About me
@@ -56,21 +60,27 @@ function home() {
           </div>
         </div>
       </section>
+      </Reveal>
       {/**Third section ################################################################## */}
+      <Reveal>
       <section id='experience' className='containerBase'>
         <h2 className='numbered-heading'>
           Where I've worked
         </h2>
         <Tabs content={experience} />
       </section>
+      </Reveal>
       {/**Fourth Section ################################################################# */}
+      <Reveal>
       <section id='work' className='containerBase'>
         <h2 className='numbered-heading lg:w-fit lg:max-w-5xl lg:mx-auto'>
           What I've done
         </h2>
         <FeaturedProjects data={featuredProjects} />
       </section>
+      </Reveal>
       {/**Contact Section ################################################################# */}
+      <Reveal>
       <section id='contact' className='containerBase'>
         <p className='special text-center mb-1'>
           04. Looking for me ?
@@ -86,6 +96,7 @@ function home() {
             <a href="mailto:hansadiogo@gmail.com">Send a message</a>
           </button>
       </section>
+      </Reveal>
     </div>
   )
 }
