@@ -8,21 +8,28 @@ function Header() {
   if (!visible) menuClass='h-full w-fit bg-secondaryDark fixed top-[80px] right-[-100%] flex flex-col gap-12 py-8 font-mono text-center px-[70px] md:hidden z-10 transition-all duration-300 ease-in-out';
 
   return (
-    <div className='px-5 h-[80px] flex items-center justify-between lg:px-[50px] fixed top-0 left-0 w-full bg-secondary z-20 shadow-lg'>
-        <nav>
-        <a href="" className='w-fit px-3 text-xl text-primary font-semi-bold'>HA.</a>
-        </nav>
+    <div>
+      <div className='px-5 h-[80px] flex items-center justify-between lg:px-[50px] fixed top-0 left-0 w-full bg-secondary z-20 shadow-lg'>
+          <nav>
+          <a href="" className='w-fit px-3 text-xl text-primary font-semi-bold'>HA.</a>
+          </nav>
 
-        <div className={ visible ? `menuIcon menuIconActive` : `menuIcon`} onClick={()=>setVisible(!visible)}>
-          <div></div>
-        </div>
-        {/**Mobile Menu */}
-     <nav className={menuClass}>
-        <a href='#about' className='menu-mobile-link'>About</a>
-        <a href='#experience' className='menu-mobile-link'>Experience</a>
-        <a href='#work' className='menu-mobile-link'>Projects</a>
-        <a href='#contact' className='menu-mobile-link'>Contact</a>
-     </nav>
+          <div className={ visible ? `menuIcon menuIconActive` : `menuIcon`} onClick={()=>setVisible(!visible)}>
+            <div></div>
+          </div>
+          {/**Mobile Menu */}
+        <nav className={menuClass}>
+            <a href='#about' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>About</a>
+            <a href='#experience' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>Experience</a>
+            <a href='#work' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>Projects</a>
+            <a href='#contact' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>Contact</a>
+        </nav>
+      </div>
+      {/**Overlay */}
+      {/**Overlay */}
+     { visible ? (<div className='fixed w-full h-screen z-10 top-0 left-0 block md:hidden
+     backdrop-blur-sm transition-all duration-150 ease-in' onClick={()=>setVisible(!visible)}></div>) : 
+     (<div className='fixed z-10 w-full h-screen backdrop-blur-0 top-0 left-0 transition-all duration-150 ease-in'></div>) }
     </div>
   )
 }
