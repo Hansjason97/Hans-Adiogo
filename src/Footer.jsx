@@ -12,7 +12,7 @@ function Footer() {
         md:after:content-[""] md:after:block md:after:h-10 md:after:w-[1px] md:after:bg-blancDark
         lg:left-6'>
             <a href="https://github.com/Hansjason97" className='footerLink'><VscGithub /></a>
-            <a href="https://www.linkedin.com/in/jason-adiogo-a12018199" className='footerLink'><RxLinkedinLogo /></a>
+            <a href="https://www.linkedin.com/in/jason-adiogo" className='footerLink'><RxLinkedinLogo /></a>
             <a href="https://www.instagram.com/jasonadiogo/" className='footerLink'><GrInstagram /></a>
             <a href="https://www.behance.net/hanspen" className='footerLink'><FaBehance /></a>
         </div>
@@ -23,8 +23,7 @@ function Footer() {
             <a href="mailto:hansadiogo@gmail.com" className='footerMail'>hansadiogo@gmail.com</a>
         </div>
         <div className='flex py-5 justify-center gap-5 font-mono text-sm'>
-          <a href="" className='transition-all duration-100 ease-linear hover:text-primary'>Built by Hans Adiogo</a> -
-          <a href="" className='transition-all duration-100 ease-linear hover:text-primary'>Inspiration</a>
+          <a href="https://github.com/Hansjason97" className='transition-all duration-100 ease-linear hover:text-primary'>2023 - Hans Adiogo</a> -
         </div>
     </div>
   )
