@@ -1,5 +1,4 @@
-import image1 from '../assets/screenshot1.jpg'
-import image2 from '../assets/screenshot2.jpg'
+
 
 export const experience = [
     {
@@ -35,11 +34,10 @@ export const experience = [
 export const featuredProjects = [
     {
         title: 'IS Emergence',
-        description: 'My super duper description for a smooth project recently made for a new company in tech domains.',
+        description: 'This project is a React web application for the website of a higher institute.',
         tags: ['React', 'Tailwind'],
         linkGithub: "https://github.com/Hansjason97/IS-emergence",
-        linkPreview: "https://cerulean-puffpuff-fc778b.netlify.app/",
-        image: image1
+        linkPreview: "https://is-emergence.netlify.app/",
     },
     {
         title: 'Best Eats',
@@ -47,14 +45,12 @@ export const featuredProjects = [
         tags: ['React', 'Tailwind'],
         linkGithub: "https://github.com/Hansjason97/Best-Eats",
         linkPreview: null,
-        image: image2
     },
     {
-        title: 'My cool project title',
+        title: 'SIS-Consulting',
         description: 'My super duper description for a smooth project recently made for a new company in tech domains.',
-        tags: ['React', 'Tailwind', 'VS Code'],
-        linkGithub: null,
-        linkPreview: null,
-        image: null
+        tags: ['React', 'Tailwind'],
+        linkGithub: "https://github.com/Hansjason97/sis-consulting",
+        linkPreview: "https://sis-consulting.netlify.app/",
     },
 ];

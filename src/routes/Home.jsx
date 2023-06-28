@@ -20,7 +20,7 @@ function home() {
         </h2>
 
         <p className='mt-5 max-w-lg'>
-          I'm an IT engineer specializing in designing and building digital solutions.
+          I'm an IT engineer specialized in designing and building digital solutions.
            Currently focused on learning new tools and technologies to improve my skills.
         </p>
           <button className='mt-6 button-primary'>
