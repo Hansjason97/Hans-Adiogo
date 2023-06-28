@@ -29,6 +29,15 @@ export const experience = [
             "Collaborated with team to build the architecture for a large web application"
         ]
     },
+    {
+        title: 'ITG-Store',
+        role: 'Web developer',
+        company: 'SERVOO',
+        date: 'August - September 2019',
+        elements: [
+            "Implemented a CI chain with Jenkins",
+        ]
+    },
 ];
 
 export const featuredProjects = [
@@ -41,14 +50,14 @@ export const featuredProjects = [
     },
     {
         title: 'Best Eats',
-        description: 'My super duper description for a smooth project recently made for a new company in tech domains.',
+        description: "Template website for a company which deliver food from restaurants.",
         tags: ['React', 'Tailwind'],
         linkGithub: "https://github.com/Hansjason97/Best-Eats",
         linkPreview: null,
     },
     {
         title: 'SIS-Consulting',
-        description: 'My super duper description for a smooth project recently made for a new company in tech domains.',
+        description: 'Business website for a company that offer electronic security services.',
         tags: ['React', 'Tailwind'],
         linkGithub: "https://github.com/Hansjason97/sis-consulting",
         linkPreview: "https://sis-consulting.netlify.app/",
