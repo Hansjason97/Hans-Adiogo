@@ -23,7 +23,7 @@ function Footer() {
             <a href="mailto:hansadiogo@gmail.com" className='footerMail'>hansadiogo@gmail.com</a>
         </div>
         <div className='flex py-5 justify-center gap-5 font-mono text-sm'>
-          <a href="https://github.com/Hansjason97" className='transition-all duration-100 ease-linear hover:text-primary'>2023 - Hans Adiogo</a> -
+          <a href="https://github.com/Hansjason97" className='transition-all duration-100 ease-linear hover:text-primary'>2023 - Hans Adiogo</a>
         </div>
     </div>
   )
