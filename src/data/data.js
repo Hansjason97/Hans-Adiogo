@@ -3,39 +3,39 @@
 export const experience = [
     {
         title: 'Bds',
-        role: 'Web developer',
+        role: "job1Role",
         company: 'BDS Group',
-        date: 'June 2021 - February 2022',
+        date: "job1Date",
         elements: [
-            "Developed, maintained and shipped company's websites using WordPress"
+            "job1El1"
         ]
     },
     {
         title: 'Danol',
-        role: 'Web developer',
+        role: 'job2Role',
         company: 'Danol Group',
-        date: 'February - April 2021',
+        date: 'job2Date',
         elements: [
-            "Developed and styled interactive web applications for Danol using Angular and Bootstrap"
+            "job2El1"
         ]
     },
     {
         title: 'Servoo',
-        role: 'Web developer',
+        role: 'job3Role',
         company: 'SERVOO',
-        date: 'March - October 2020',
+        date: 'job3Date',
         elements: [
-            "Developed and styled a web application for a client using Angular",
-            "Collaborated with team to build the architecture for a large web application"
+            "job3El1",
+            "job3El2"
         ]
     },
     {
         title: 'ITG-Store',
-        role: 'Web developer',
-        company: 'SERVOO',
-        date: 'August - September 2019',
+        role: 'job4Role',
+        company: 'ITG-Store',
+        date: 'job4Date',
         elements: [
-            "Implemented a CI chain with Jenkins",
+            "job4El1",
         ]
     },
 ];
@@ -43,21 +43,21 @@ export const experience = [
 export const featuredProjects = [
     {
         title: 'IS Emergence',
-        description: 'This project is a React web application for the website of a higher institute.',
+        description: 'project1',
         tags: ['React', 'Tailwind'],
         linkGithub: "https://github.com/Hansjason97/IS-emergence",
         linkPreview: "https://is-emergence.netlify.app/",
     },
     {
         title: 'Best Eats',
-        description: "Template website for a company which deliver food from restaurants.",
+        description: "project2",
         tags: ['React', 'Tailwind'],
         linkGithub: "https://github.com/Hansjason97/Best-Eats",
         linkPreview: null,
     },
     {
         title: 'SIS-Consulting',
-        description: 'Business website for a company that offer electronic security services.',
+        description: 'project3',
         tags: ['React', 'Tailwind'],
         linkGithub: "https://github.com/Hansjason97/sis-consulting",
         linkPreview: "https://sis-consulting.netlify.app/",

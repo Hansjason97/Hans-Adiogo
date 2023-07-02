@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { useTranslation } from "react-i18next";
 
 function Tabs(props) {
 
+    const { t } = useTranslation();
     const [currentTab, setCurrentTab] = useState(props.content[0]);
 
   return (
@@ -14,14 +16,14 @@ function Tabs(props) {
             )) }
         </div>
         <div className='flex flex-col px-5 max-w-lg'>
-            <h4>{currentTab.role}
+            <h4>{t(currentTab.role)}
             <a href="" className='customLink ml-2'>@ {currentTab.company}</a></h4>
             <p className='font-mono text-xs mt-1 mb-4'>
-                {currentTab.date}
+                {t(currentTab.date)}
             </p>
             <ul role='list' className='technologies'>
                 { currentTab.elements.map((item, index) => (
-                    <li className='font-sans text-base' key={index}>{item}</li>
+                    <li className='font-sans text-base' key={index}>{t(item)}</li>
                 )) }
             </ul>
         </div>

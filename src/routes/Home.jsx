@@ -5,26 +5,30 @@ import FeaturedProjects from '../components/FeaturedProjects'
 import jason from '../assets/jason.png'
 import Reveal from '../components/Reveal'
 
+import { useTranslation } from "react-i18next";
+
 function home() {
+
+  const { t } = useTranslation();
+
   return (
     <div>
       {/* First section ############################################################## */}
       <Reveal>
       <section id="home" className='min-h-[100vh] px-5 md:px-[50px] lg:px-[100px] mx-auto max-w-5xl flex flex-col justify-center'>
-        <p className='special mb-1'>Hi my name is</p>
+        <p className='special mb-1'>{t('hi')}</p>
         <h2 className='lvlOne text-blanc'>
           Hans Adiogo.
         </h2>
         <h2 className='lvlOne'>
-          I build things for the web.
+          {t('titleHome')}
         </h2>
 
         <p className='mt-5 max-w-lg'>
-          I'm an IT engineer specialized in designing and building digital solutions.
-           Currently focused on learning new tools and technologies to improve my skills.
+          {t('desc')}
         </p>
           <button className='mt-6 button-primary'>
-            <a href="mailto:hansadiogo@gmail.com">Contact me !</a>
+            <a href="mailto:hansadiogo@gmail.com">{t('contactMe')}</a>
           </button>
       </section>
       </Reveal>
@@ -32,20 +36,18 @@ function home() {
       <Reveal>
       <section id='about' className='containerBase'>
         <h2 className='numbered-heading'>
-          About me
+          {t('aboutMe')}
         </h2>
         <div className='flex flex-col md:flex-row gap-[50px]'>
           <div className='lg:w-[512px] flex flex-col gap-4'>
             <p>
-              Hi! My name is Hans, I like to create stuffs for the web from cool designs to web apps.
-               Started with images 6 years ago and now I'm working on my way to UI/UX with <a href="" className='customLink'>figma</a>.
+              {t('aboutTxt1')}<a href="" className='customLink'>figma</a>.
             </p>
             <p>
-              Over the years, I've built various solutions for companies and businesses from business websites to web applications.
-               Currently learning new tools and technologies to increase the range of my skills.
+            {t('aboutTxt2')}
             </p>
             <p>
-              Here are few technologies and tools I've worked with recently :
+            {t('aboutTxt3')}
             </p>
             <ul role='list' className='technologies'>
                 <li>Javascript</li>
@@ -65,7 +67,7 @@ function home() {
       <Reveal>
       <section id='experience' className='containerBase'>
         <h2 className='numbered-heading'>
-          Where I've worked
+          {t('expMe')}
         </h2>
         <Tabs content={experience} />
       </section>
@@ -74,7 +76,7 @@ function home() {
       <Reveal>
       <section id='work' className='containerBase'>
         <h2 className='numbered-heading lg:w-fit lg:max-w-5xl lg:mx-auto'>
-          What I've done
+          {t('projectsSection')}
         </h2>
         <FeaturedProjects data={featuredProjects} />
       </section>
@@ -83,17 +85,16 @@ function home() {
       <Reveal>
       <section id='contact' className='containerBase'>
         <p className='special text-center mb-1'>
-          04. Looking for me ?
+          {t('contactTop')}
         </p>
         <h2 className='text-3xl sm:text-5xl leading-[110%] tracking-tight mb-8 text-blanc text-center'>
-          Get in touch
+          {t('contactTitle')}
         </h2>
         <p className='mx-auto max-w-lg text-center'>
-          Got a project ? An Idea ? Feel free to contact me !
-          My inbox is always open.
+          {t('contactContent')}
         </p>
         <button className='my-10 button-primary mx-auto'>
-            <a href="mailto:hansadiogo@gmail.com">Send a message</a>
+            <a href="mailto:hansadiogo@gmail.com">{t('messageButton')}</a>
           </button>
       </section>
       </Reveal>

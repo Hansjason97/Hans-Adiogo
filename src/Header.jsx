@@ -1,7 +1,15 @@
 import React, {useState} from 'react'
 import logo from './assets/logo.svg'
+import { useTranslation } from "react-i18next";
 
 function Header() {
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+  console.log(i18n.resolvedLanguage);
 
   const [visible, setVisible] = useState(false);
 
@@ -19,17 +27,35 @@ function Header() {
             <div></div>
           </div>
           <nav className='menuTab'>
-            <a href="#about" className='menuLink'>About</a>
-            <a href="#experience" className='menuLink'>Experience</a>
-            <a href="#work" className='menuLink'>Projects</a>
-            <a href="#contact" className='menuLink'>Contact</a>
+            <a href="#about" className='menuLink'>{t('about')}</a>
+            <a href="#experience" className='menuLink'>{t('experience')}</a>
+            <a href="#work" className='menuLink'>{t('projects')}</a>
+            <a href="#contact" className='menuLink'>{t('contact')}</a>
+            <span className='flex px-2 items-center justify-center'>
+            { i18n.resolvedLanguage === "en" ? (
+              <button onClick={()=> changeLanguage("fr")} className='special flex gap-2 items-center'><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" alt="" className='w-5 h-5 bg-cover bg-center rounded-full' />
+              FR</button>
+            ) : (
+              <button onClick={()=> changeLanguage("en")} className='special flex gap-2 items-center'><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png" alt="" className='w-5 h-5 bg-cover bg-center rounded-full' />
+              EN</button>
+            ) }
+            </span>
           </nav>
           {/**Mobile Menu */}
         <nav className={menuClass}>
-            <a href='#about' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>About</a>
-            <a href='#experience' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>Experience</a>
-            <a href='#work' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>Projects</a>
-            <a href='#contact' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>Contact</a>
+            <a href='#about' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>{t('about')}</a>
+            <a href='#experience' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>{t('experience')}</a>
+            <a href='#work' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>{t('projects')}</a>
+            <a href='#contact' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>{t('contact')}</a>
+            <span className='flex px-2 items-center justify-center'>
+            { i18n.resolvedLanguage === "en" ? (
+              <button onClick={()=> changeLanguage("fr")} className='special flex gap-2 items-center'><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" alt="" className='w-5 h-5 bg-cover bg-center rounded-full' />
+              </button>
+            ) : (
+              <button onClick={()=> changeLanguage("en")} className='special flex gap-2 items-center'><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png" alt="" className='w-5 h-5 bg-cover bg-center rounded-full' />
+              </button>
+            ) }
+            </span>
         </nav>
       </div>
     </div>
