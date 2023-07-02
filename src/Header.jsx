@@ -9,7 +9,6 @@ function Header() {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
-  console.log(i18n.resolvedLanguage);
 
   const [visible, setVisible] = useState(false);
 

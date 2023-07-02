@@ -4,10 +4,11 @@ import App from './App.jsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import './i18n.jsx'
+import Loading from './components/Loading.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <React.Suspense fallback="loading...">
+    <React.Suspense fallback={<Loading />}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
