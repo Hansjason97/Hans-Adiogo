@@ -2,8 +2,13 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./routes/Home";
+import { useTranslation } from "react-i18next";
 
 function App() {
+
+  const {t} = useTranslation();
+
+  document.title = t("title");
 
   return (
     <Routes>

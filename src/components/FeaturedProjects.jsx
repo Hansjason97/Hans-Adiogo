@@ -11,7 +11,7 @@ function FeaturedProjects(props) {
   return (
     <div className='grid gap-2 sm:grid-cols-2 lg:grid-cols-3 my-6'>
         { props.data.map((project, index) =>(
-            <a href={project.linkGithub} key={index} className='mx-auto group'>
+            <div key={index} className='mx-auto group cursor-pointer'>
                 <div className='flex flex-col px-5 py-10 relative bg-secondaryDark rounded-md h-full top-0 shadow-sm
                 hover:top-[-7px] transition-all duration-150 ease-in'>
                     <div className='flex justify-between pb-6 items-center'>
@@ -36,7 +36,7 @@ function FeaturedProjects(props) {
                         )) }
                     </div>
                 </div>
-            </a>
+            </div>
         )) }
     </div>
   )
