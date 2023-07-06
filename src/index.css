@@ -49,7 +49,7 @@
     @apply font-mono text-primary ;
   }
   .numbered-heading{
-    @apply flex items-baseline relative text-[28px] sm:text-4xl leading-[110%] tracking-tight after:w-full after:md:w-[300px] whitespace-nowrap mb-10 text-blanc;
+    @apply flex items-baseline relative text-[28px] sm:text-4xl leading-[110%] tracking-tight after:w-full after:md:w-[300px]  mb-10 text-blanc /*whitespace-nowrap*/;
   }
   .numbered-heading::before{
     counter-increment: h2;
