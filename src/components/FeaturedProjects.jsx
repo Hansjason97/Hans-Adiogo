@@ -18,9 +18,9 @@ function FeaturedProjects(props) {
                         <FiFolder className="h-8 w-8 text-primary"/>
                         <div className='flex gap-4 items-center'>
                             {project.linkGithub != null ?
-                            (<a href={project.linkGithub} className='hover:text-primary transition-all duration-150 ease-linear'><TbBrandGithub className='h-6 w-6' /></a>) : null}
+                            (<a href={project.linkGithub} target='_blank' className='hover:text-primary transition-all duration-150 ease-linear'><TbBrandGithub className='h-6 w-6' /></a>) : null}
                             {project.linkPreview != null ?
-                            (<a href={project.linkPreview} className='hover:text-primary transition-all duration-150 ease-linear'><FaExternalLinkAlt className="h-5 w-5"/></a>) : null}
+                            (<a href={project.linkPreview} target='_blank' className='hover:text-primary transition-all duration-150 ease-linear'><FaExternalLinkAlt className="h-5 w-5"/></a>) : null}
                             
                         </div>
                     </div>
