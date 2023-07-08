@@ -53,7 +53,7 @@ export const featuredProjects = [
         description: "project2",
         tags: ['React', 'Tailwind'],
         linkGithub: "https://github.com/Hansjason97/Best-Eats",
-        linkPreview: null,
+        linkPreview: "https://hansjason97.github.io/Best-Eats/",
     },
     {
         title: 'SIS-Consulting',
