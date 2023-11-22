@@ -30,7 +30,6 @@ function Header() {
           </div>
           <nav className='menuTab'>
             <a href="#about" className='menuLink'>{t('about')}</a>
-            <a href="#experience" className='menuLink'>{t('experience')}</a>
             <a href="#work" className='menuLink'>{t('projects')}</a>
             <a href="#contact" className='menuLink'>{t('contact')}</a>
             <span className='flex px-2 items-center justify-center'>
@@ -46,7 +45,6 @@ function Header() {
           {/**Mobile Menu */}
         <nav className={menuClass}>
             <a href='#about' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>{t('about')}</a>
-            <a href='#experience' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>{t('experience')}</a>
             <a href='#work' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>{t('projects')}</a>
             <a href='#contact' className='menu-mobile-link' onClick={()=>setVisible(!visible)}>{t('contact')}</a>
             <span className='flex px-2 items-center justify-center'>
