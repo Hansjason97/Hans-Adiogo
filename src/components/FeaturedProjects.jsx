@@ -52,7 +52,7 @@ function FeaturedProjects(props) {
                 </span>
               ))}
             </div>
-            {project.image && <div className="absolute top-0 left-0 w-full h-full bg-cover grayscale opacity-[0.03] " style={{backgroundImage: `url(/images/${project.image})`}} /> }
+            {project.image && <div className="absolute top-0 left-0 w-full h-full bg-cover grayscale opacity-[0.05] " style={{backgroundImage: `url(/images/${project.image})`}} /> }
           </div>
         </div>
       ))}
