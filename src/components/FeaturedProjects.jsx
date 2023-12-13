@@ -27,7 +27,7 @@ function FeaturedProjects(props) {
                     <h4 className='group-hover:text-primary transition-all duration-75 ease-linear'>
                         {project.title}
                     </h4>
-                    <p className='text-sm p-0 my-5'>
+                    <p className='text-sm p-0 my-5 project-desc'>
                         {t(project.description)}
                     </p>
                     <div className='flex wrap gap-2'>

@@ -42,6 +42,20 @@ export const experience = [
 
 export const featuredProjects = [
     {
+        title: 'The Ticket',
+        description: 'project4',
+        tags: ['React, Tailwind'],
+        linkGithub: null,
+        linkPreview: "https://theticket-frontend.vercel.app/",
+    },
+    {
+        title: 'AfricaMoney',
+        description: 'project5',
+        tags: ['React, Tailwind'],
+        linkGithub: null,
+        linkPreview: "https://africamoney.app",
+    },
+    {
         title: 'IS Emergence',
         description: 'project1',
         tags: ['React', 'Tailwind'],
