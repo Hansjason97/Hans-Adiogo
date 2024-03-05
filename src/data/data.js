@@ -45,7 +45,7 @@ export const featuredProjects = [
         title:'Le Carino',
         description: 'projectLeCarino',
         tags: ['Nextjs', 'Tailwind'],
-        linkPreview: "https://next-carino.vercel.app/",
+        linkPreview: "https://le-carino.com/",
         image:"lecarino.jpg"
     },
     {
