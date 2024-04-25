@@ -42,16 +42,23 @@ export const experience = [
 
 export const featuredProjects = [
     {
-        title: 'The Ticket',
+        title: 'Linko (in construction)',
         description: 'project4',
-        tags: ['React, Tailwind'],
+        tags: ['NextJs, Typescript, Tailwind'],
         linkGithub: null,
-        linkPreview: "https://theticket-frontend.vercel.app/",
+        linkPreview: "https://linko-five.vercel.app/fr",
+    },
+    {
+        title: 'Le Carino',
+        description: 'project6',
+        tags: ['NextJs, Tailwind, Axios, React Query, Typescript'],
+        linkGithub: null,
+        linkPreview: "https://le-carino.com"
     },
     {
         title: 'AfricaMoney',
         description: 'project5',
-        tags: ['React, Tailwind'],
+        tags: ['React, Axios, Tailwind'],
         linkGithub: null,
         linkPreview: "https://africamoney.app",
     },
