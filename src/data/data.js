@@ -42,16 +42,23 @@ export const experience = [
 
 export const featuredProjects = [
     {
+        title:"Saga Africa",
+        description: "projectSaga",
+        tags:["NextJs, TailwindCSS, Axios, NodeJs"],
+        linkPreview: "https://saga-africa.vercel.app/",
+        image: "sagaAfrica.jpg"
+    },
+    {
         title:'Le Carino',
         description: 'projectLeCarino',
-        tags: ['Nextjs', 'Tailwind'],
+        tags: ['NextJs', 'TailwindCSS, Axios, NodeJs'],
         linkPreview: "https://le-carino.com/",
         image:"lecarino.jpg"
     },
     {
         title: 'AfricaMoney',
         description: 'projectAfricaMoney',
-        tags: ['React', 'Tailwind', 'Laravel'],
+        tags: ['React', 'TailwindCSS', 'Laravel'],
         linkPreview: "https://africamoney.app",
         image: "africamoney.jpg"
     },
