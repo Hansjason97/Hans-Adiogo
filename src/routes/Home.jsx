@@ -16,7 +16,7 @@ function home() {
       <section id="home" className='min-h-[100vh] px-5 md:px-[50px] lg:px-[100px] mx-auto max-w-5xl flex flex-col justify-center'>
         <p className='special mb-1'>{t('hi')}</p>
         <h2 className='lvlOne text-blanc'>
-          Krest Digital & Fintech.
+          KrestDev.
         </h2>
         <h2 className='lvlOne'>
           {t('titleHome')}
