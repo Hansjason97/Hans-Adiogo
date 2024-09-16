@@ -49,6 +49,13 @@ export const featuredProjects = [
         image: "cotraf.webp"
     },
     {
+        title: "Krest Holding",
+        description: "projectKrest",
+        tags: ["Nextjs", "TailwindCSS", "NodeJs"],
+        linkPreview: "https://www.krestholding.com/",
+        image: "krestholding.webp"
+    },
+    {
         title: "Remi Sarl",
         description: "projectRemi",
         tags: ["Figma"],
@@ -75,6 +82,13 @@ export const featuredProjects = [
         tags: ['React', 'TailwindCSS', 'Laravel'],
         linkPreview: "https://africamoney.app",
         image: "africamoney.jpg"
+    },
+    {
+        title: '67Design&Build',
+        description: 'project67Design',
+        tags: ['NextJs', 'TailwindCSS'],
+        linkPreview: "https://africamoney.app",
+        image: "67design.webp"
     },
     {
         title:'Kuandaa',
