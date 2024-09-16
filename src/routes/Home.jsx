@@ -58,7 +58,7 @@ function home() {
           </div>
           <div className='mx-auto sm:mx-0 relative top-0 max-h-[300px] w-fit cursor-pointer group transition-all duration-300 ease-in hover:top-[-7px]'>
             <div className='absolute h-full w-full z-[2] transition-all duration-150 ease-linear mix-blend-color hover:opacity-0'></div>
-            <img src="/images/logoKrest.jpg" alt="" className='max-w-[300px] object-cover contrast-50 group-hover:contrast-100 grayscale group-hover:grayscale-0 transition-all duration-150 ease-linear' />
+            <img src="/images/krestdev.png" alt="" className='max-w-[300px] object-cover contrast-50 group-hover:contrast-100 grayscale group-hover:grayscale-0 transition-all duration-150 ease-linear' />
           </div>
         </div>
       </section>

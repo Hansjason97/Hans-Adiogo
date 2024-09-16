@@ -42,6 +42,13 @@ export const experience = [
 
 export const featuredProjects = [
     {
+        title: "ERP Pressing",
+        description: "projectKotong",
+        tags: ["Nextjs", "TailwindCSS", "NodeJs", "Docker", "Grafana", "Promptail", "Prometheus", "Typescript"],
+        linkPreview: "#",
+        image: "pressing.webp"
+    },
+    {
         title: "Cotraf",
         description: "projectCotraf",
         tags: ["Nextjs", "TailwindCSS"],

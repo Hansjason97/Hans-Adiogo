@@ -43,14 +43,11 @@ function FeaturedProjects(props) {
             </h4>
             <p className="text-sm p-0 my-5">{t(project.description)}</p>
             <div className="flex wrap gap-2">
-              {project.tags.map((tag, index) => (
-                <span
-                  key={index}
-                  className="tracking-tighter font-mono text-sm"
-                >
-                  {tag}
-                </span>
-              ))}
+              <span className="tracking-tighter font-mono text-sm">
+              {
+                project.tags.join(", ")
+              }
+              </span>
             </div>
             {project.image && <div className="absolute top-0 left-0 w-full h-full bg-cover grayscale opacity-[0.05] " style={{backgroundImage: `url(/images/${project.image})`}} /> }
           </div>
