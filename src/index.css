@@ -133,6 +133,12 @@
     counter-reset: b;
     @apply font-mono hidden md:flex gap-8;
   }
+  .project-desc{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+  }
 
 
 
