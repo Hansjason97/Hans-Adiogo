@@ -42,6 +42,20 @@ export const experience = [
 
 export const featuredProjects = [
     {
+        title: "Cotraf",
+        description: "projectCotraf",
+        tags: ["Nextjs", "TailwindCSS"],
+        linkPreview: "https://cotraf-cm.com/",
+        image: "cotraf.webp"
+    },
+    {
+        title: "Remi Sarl",
+        description: "projectRemi",
+        tags: ["Figma"],
+        linkPreview: "https://www.figma.com/proto/MjKBabvOGQ2LfcdNoJoA12/REMI-Sarl?page-id=0%3A1&node-id=4-2&node-type=frame&viewport=655%2C665%2C0.39&t=fmmhmnnQGBJ8tgkp-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A2",
+        image: "remisarl.webp"
+    },
+    {
         title:"Saga Africa",
         description: "projectSaga",
         tags:["NextJs, TailwindCSS, Axios, NodeJs"],

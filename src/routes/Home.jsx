@@ -1,10 +1,9 @@
 import React from 'react'
-import Tabs from '../components/Tabs'
-import { experience, featuredProjects } from '../data/data'
 import FeaturedProjects from '../components/FeaturedProjects'
 import Reveal from '../components/Reveal'
+import { featuredProjects } from '../data/data'
 
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 
 function home() {
 
