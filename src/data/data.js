@@ -42,18 +42,60 @@ export const experience = [
 
 export const featuredProjects = [
     {
+        title: "ERP Pressing",
+        description: "projectKotong",
+        tags: ["Nextjs", "TailwindCSS", "NodeJs", "Docker", "Grafana", "Promptail", "Prometheus", "Typescript"],
+        linkPreview: "#",
+        image: "pressing.webp"
+    },
+    {
+        title: "Cotraf",
+        description: "projectCotraf",
+        tags: ["Nextjs", "TailwindCSS"],
+        linkPreview: "https://cotraf-cm.com/",
+        image: "cotraf.webp"
+    },
+    {
+        title: "Krest Holding",
+        description: "projectKrest",
+        tags: ["Nextjs", "TailwindCSS", "NodeJs"],
+        linkPreview: "https://www.krestholding.com/",
+        image: "krestholding.webp"
+    },
+    {
+        title: "Remi Sarl",
+        description: "projectRemi",
+        tags: ["Figma"],
+        linkPreview: "https://www.figma.com/proto/MjKBabvOGQ2LfcdNoJoA12/REMI-Sarl?page-id=0%3A1&node-id=4-2&node-type=frame&viewport=655%2C665%2C0.39&t=fmmhmnnQGBJ8tgkp-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A2",
+        image: "remisarl.webp"
+    },
+    {
+        title:"Saga Africa",
+        description: "projectSaga",
+        tags:["NextJs, TailwindCSS, Axios, NodeJs"],
+        linkPreview: "https://saga-africa.vercel.app/",
+        image: "sagaAfrica.jpg"
+    },
+    {
         title:'Le Carino',
         description: 'projectLeCarino',
-        tags: ['Nextjs', 'Tailwind'],
+        tags: ['NextJs', 'TailwindCSS, Axios, NodeJs'],
         linkPreview: "https://le-carino.com/",
         image:"lecarino.jpg"
     },
     {
         title: 'AfricaMoney',
         description: 'projectAfricaMoney',
-        tags: ['React', 'Tailwind', 'Laravel'],
+        tags: ['React', 'TailwindCSS', 'Laravel'],
         linkPreview: "https://africamoney.app",
         image: "africamoney.jpg"
+    },
+    {
+        title: '67Design&Build',
+        description: 'project67Design',
+        tags: ['NextJs', 'TailwindCSS'],
+        linkPreview: "https://africamoney.app",
+        image: "67design.webp"
     },
     {
         title:'Kuandaa',

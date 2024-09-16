@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import logo from './assets/logo.svg'
+import logo from './assets/krestdev.svg'
 import { useTranslation } from "react-i18next";
 
 function Header() {
@@ -22,7 +22,7 @@ function Header() {
     <div>
       <div className='px-5 h-[80px] flex items-center justify-between lg:px-[50px] fixed top-0 left-0 w-full bg-secondary z-20 shadow-lg'>
           <nav>
-          <a href="#"><img src={logo} alt="logo" className='w-8 h-8'/></a>
+          <a href="#"><img src={logo} alt="logo" className="h-10 w-auto"/></a>
           </nav>
 
           <div className={ visible ? `menuIcon menuIconActive` : `menuIcon`} onClick={()=>setVisible(!visible)}>

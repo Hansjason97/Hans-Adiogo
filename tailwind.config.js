@@ -11,13 +11,14 @@ export default {
     },
     extend: {
       colors:{
-        primary: '#EFB533',
-        secondary: '#23272b',
-        secondaryLight: '#2A354B',
-        secondaryDark: '#16181C',
+        primary: '#83C4FF',
+        secondary: '#1c1e3a',
+        secondaryLight: '#383B5B',
+        secondaryDark: '#0E1128',
         secondaryBlack: '#040912',
         blanc: '#E8E9ED',
-        blancDark: '#9A9DA7'
+        blancDark: '#9A9DA7',
+        trueBlue: "#3684DB"
 
       }
     },
