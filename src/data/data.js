@@ -94,7 +94,7 @@ export const featuredProjects = [
         title: '67Design&Build',
         description: 'project67Design',
         tags: ['NextJs', 'TailwindCSS'],
-        linkPreview: "https://africamoney.app",
+        linkPreview: "https://67designandbuild.krestdev.com/",
         image: "67design.webp"
     },
     {
