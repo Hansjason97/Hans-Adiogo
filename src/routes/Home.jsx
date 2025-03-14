@@ -10,6 +10,7 @@ import { useTranslation } from "react-i18next";
 function home() {
 
   const { t } = useTranslation();
+  const techs = ["NextJs", "React", "Javascript", "NodeJs"];
 
   return (
     <div>
@@ -41,7 +42,7 @@ function home() {
         <div className='flex flex-col md:flex-row gap-[50px]'>
           <div className='lg:w-[512px] flex flex-col gap-4'>
             <p>
-              {t('aboutTxt1')}<a href="" className='customLink'>figma</a>.
+              {t('aboutTxt1')}
             </p>
             <p>
             {t('aboutTxt2')}
@@ -50,10 +51,7 @@ function home() {
             {t('aboutTxt3')}
             </p>
             <ul role='list' className='technologies'>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Figma</li>
+                {techs.map((x,i)=><li key={i}>{x}</li>)}
               </ul>
           </div>
           <div className='mx-auto sm:mx-0 relative top-0 max-h-[300px] w-fit cursor-pointer group transition-all duration-300 ease-in hover:top-[-7px]'>

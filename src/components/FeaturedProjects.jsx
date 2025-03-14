@@ -30,9 +30,9 @@ function FeaturedProjects(props) {
                     <p className='text-sm p-0 my-5 project-desc'>
                         {t(project.description)}
                     </p>
-                    <div className='flex wrap gap-2'>
+                    <div className='flex flex-wrap gap-2'>
                         { project.tags.map((tag, index)=>(
-                            <span key={index} className='tracking-tighter font-mono text-sm'>{tag}</span>
+                            <span key={index} className='tracking-tighter font-mono text-sm px-2 py-1 rounded-full border border-gray-800'>{tag}</span>
                         )) }
                     </div>
                 </div>
