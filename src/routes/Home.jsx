@@ -39,8 +39,8 @@ function home() {
         <h2 className='numbered-heading'>
           {t('aboutMe')}
         </h2>
-        <div className='flex flex-col md:flex-row gap-[50px]'>
-          <div className='lg:w-[512px] flex flex-col gap-4'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-[50px]'>
+          <div className='w-full flex flex-col gap-4 col-span-1 lg:col-span-2 order-2 lg:order-1'>
             <p>
               {t('aboutTxt1')}
             </p>
@@ -54,10 +54,7 @@ function home() {
                 {techs.map((x,i)=><li key={i}>{x}</li>)}
               </ul>
           </div>
-          <div className='mx-auto sm:mx-0 relative top-0 max-h-[300px] w-fit cursor-pointer group transition-all duration-300 ease-in hover:top-[-7px]'>
-            <div className='absolute bg-primary h-full w-full z-[2] transition-all duration-150 ease-linear mix-blend-color hover:opacity-0'></div>
-            <img src={jason} alt="" className='max-w-[300px] contrast-50 group-hover:contrast-100 grayscale group-hover:grayscale-0 transition-all duration-150 ease-linear' />
-          </div>
+            <img src={"/logo-white.jpg"} alt="me" className='max-w-[300px] w-full aspect-square h-auto object-cover order-1 lg:order-2' />
         </div>
       </section>
       </Reveal>

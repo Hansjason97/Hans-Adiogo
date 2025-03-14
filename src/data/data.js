@@ -66,9 +66,30 @@ export const featuredProjects = [
     {
         title: 'Le Carino',
         description: 'project6',
-        tags: ['NextJs', 'Tailwind', 'Axios', 'React Query', 'Typescript'],
+        tags: ['NextJs', 'Tailwind', 'Axios', 'React Query', "Zustand", 'Typescript'],
         linkGithub: null,
         linkPreview: "https://www.le-carino.com"
+    },
+    {
+        title: 'Fondation Jeanne Caroline Mfege',
+        description: 'projectJCM',
+        tags: ['NextJs', 'Tailwind', 'Typescript'],
+        linkGithub: null,
+        linkPreview: "https://fondation-jcm.vercel.app"
+    },
+    {
+        title: 'Gajo Trading',
+        description: 'projectGajo',
+        tags: ['NextJs', 'Tailwind', 'Typescript', 'Axios'],
+        linkGithub: null,
+        linkPreview: "https://gajo-trading.vercel.app"
+    },
+    {
+        title: 'Sanagri',
+        description: 'projectSanagri',
+        tags: ['React', 'Tailwind', 'Typescript'],
+        linkGithub: null,
+        linkPreview: "https://sanagri.vercel.app"
     },
    /*  {
         title: 'Linko (in construction)',
