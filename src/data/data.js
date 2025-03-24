@@ -42,11 +42,11 @@ export const experience = [
 
 export const featuredProjects = [
     {
-        title: "ERP Pressing",
-        description: "projectKotong",
-        tags: ["Nextjs", "TailwindCSS", "NodeJs", "Docker", "Grafana", "Promptail", "Prometheus", "Typescript"],
-        linkPreview: "#",
-        image: "pressing.webp"
+        title: "Fondation Jeanne Caroline Mfege",
+        description: "projectJCM",
+        tags: ["Nextjs", "TailwindCSS"],
+        linkPreview: "https://fondation-jcm.vercel.app/",
+        image: "cotraf.webp"
     },
     {
         title: "Cotraf",
@@ -75,6 +75,13 @@ export const featuredProjects = [
         tags:["NextJs, TailwindCSS, Axios, NodeJs"],
         linkPreview: "https://saga-africa.vercel.app/",
         image: "sagaAfrica.jpg"
+    },
+    {
+        title: "ERP Pressing",
+        description: "projectKotong",
+        tags: ["Nextjs", "TailwindCSS", "NodeJs", "Docker", "Grafana", "Promptail", "Prometheus", "Typescript"],
+        linkPreview: "#",
+        image: "pressing.webp"
     },
     {
         title:'Le Carino',
