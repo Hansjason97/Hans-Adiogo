@@ -52,13 +52,13 @@ export const featuredProjects = [
         linkPreview: "https://saga-africa.vercel.app/",
         image: "sagaAfrica.jpg"
     },
-    {
+/*     {
         title: "ERP Pressing",
         description: "projectKotong",
         tags: ["Nextjs", "TailwindCSS", "NodeJs", "Docker", "Grafana", "Promptail", "Prometheus", "Typescript"],
         linkPreview: "#",
         image: "pressing.webp"
-    },
+    }, */
     {
         title:'Le Carino',
         description: 'projectLeCarino',
