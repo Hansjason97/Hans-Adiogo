@@ -1,46 +1,22 @@
 
 
-export const experience = [
-    {
-        title: 'Bds',
-        role: "job1Role",
-        company: 'BDS Group',
-        date: "job1Date",
-        elements: [
-            "job1El1"
-        ]
-    },
-    {
-        title: 'Danol',
-        role: 'job2Role',
-        company: 'Danol Group',
-        date: 'job2Date',
-        elements: [
-            "job2El1"
-        ]
-    },
-    {
-        title: 'Servoo',
-        role: 'job3Role',
-        company: 'SERVOO',
-        date: 'job3Date',
-        elements: [
-            "job3El1",
-            "job3El2"
-        ]
-    },
-    {
-        title: 'ITG-Store',
-        role: 'job4Role',
-        company: 'ITG-Store',
-        date: 'job4Date',
-        elements: [
-            "job4El1",
-        ]
-    },
-];
+export const experience = [];
 
 export const featuredProjects = [
+    {
+        title: "CréaConsult",
+        description: "projectCrea",
+        tags: ["NextJs", "NodeJs", "TailwindCSS"],
+        linkPreview: "https://betcreaconsult.com/fr",
+        image:"creaconsult.webp"
+    },
+    {
+        title: "Tyju Infosport",
+        description: "projectTyju",
+        tags: ["NextJs", "PHP", "TailwindCSS", "Slim"],
+        linkPreview: "https://tyjuinfosport.com",
+        image:"tyju.webp"
+    },
     {
         title: "Fondation Jeanne Caroline Mfege",
         description: "projectJCM",
