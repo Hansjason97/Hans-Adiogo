@@ -66,13 +66,13 @@ export const featuredProjects = [
         linkPreview: "https://le-carino.com/",
         image:"lecarino.jpg"
     },
-    {
+    /* {
         title: 'AfricaMoney',
         description: 'projectAfricaMoney',
         tags: ['React', 'TailwindCSS', 'Laravel'],
         linkPreview: "https://africamoney.app",
         image: "africamoney.jpg"
-    },
+    }, */
     {
         title: '67Design&Build',
         description: 'project67Design',
